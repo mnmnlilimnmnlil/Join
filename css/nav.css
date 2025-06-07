@@ -1,0 +1,183 @@
+@charset "UTF-8";
+
+body {
+    opacity: 0;
+    transition: opacity 0.5s;
+    background: var(--black);
+    font-family: var(--font-apple);
+    color: white;
+    scroll-behavior: smooth;
+    letter-spacing: -2%;
+    font-size: 16px;
+}
+
+body.fade-in {
+    opacity: 1;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.row {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 0.85fr 0.425fr 0.425fr 0.425fr 0.425fr 0.45fr;
+    transition: flex 0.3s ease;
+    min-height: 80px;
+    overflow: hidden;
+}
+
+.row:nth-child(1) { 
+    flex: 0.8; 
+    grid-template-columns: 0.85fr 1.7fr 0.45fr;
+}
+
+.row:nth-child(2),
+.row:nth-child(3),
+.row:nth-child(4),
+.row:nth-child(5) { flex: 1.5; }
+.row:nth-child(6) { flex: 0.5; }
+
+.cell {
+    position: relative;
+    border-right: 1px solid var(--grid-line);
+    border-bottom: 1px solid var(--grid-line);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1rem;
+    transition: background-color 0.3s ease;
+    overflow: hidden;
+}
+
+.row > div:last-child {
+    border-right: none;
+}
+
+.row:last-child > div {
+    border-bottom: none;
+}
+
+.col-span-2 { grid-column: span 2; }
+.lime { background-color: var(--lime); color: #000; font-weight: 600; }
+.blue { background-color: var(--blue); color: #fff; font-weight: 500; }
+.white { background-color: #fff; color: #000; font-weight: 500; }
+.hover-trigger {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+/* 왼쪽 정렬 텍스트 셀 */
+.left-align-cell {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: 40px;
+    padding-left: clamp(2vw, 4vw, 5vw);
+    font-family: var(--font-Montserrat);
+    font-size: clamp(1.2rem, 1.5vw, 1.5rem);
+    font-weight: 400;
+}
+
+/* 노트북 반응형 대응 */
+@media screen and (min-width: 769px) and (max-width: 1750px) {
+    .left-align-cell {
+        font-size: clamp(1rem, 1.2vw, 1.2rem);
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+/* 메뉴 셀 스타일 */
+.menu-cell {
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    width: 100%;
+    transition: background 0.2s;
+    padding-left: clamp(2vw, 4vw, 5vw);
+}
+
+.menu-icon { 
+    width: clamp(36px, 6vw, 68px);
+    height: auto;
+    max-height: clamp(36px, 6vw, 68px);
+    max-width: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.menu-icon:hover {
+    transform: scale(1.05);
+}
+
+/* 노트북 반응형 대응 */
+@media screen and (min-width: 769px) and (max-width: 1750px) {
+    .menu-icon {
+        width: clamp(28px, 4vw, 48px);
+        max-height: clamp(28px, 4vw, 48px);
+    }
+}
+
+/* 텍스트 정렬 클래스 추가 */
+.text-center {
+    justify-content: flex-start;
+    text-align: center;
+}
+
+.text-right {
+    justify-content: flex-end;
+    text-align: right;
+}
+
+.text-left {
+    justify-content: flex-start;
+    text-align: left;
+}
+
+/* 텍스트 정렬 클래스 추가 */
+.text-top-left {
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.text-top-right {
+    justify-content: flex-end;
+    align-items: flex-start;
+    text-align: right;
+}
+
+.text-bottom-left {
+    justify-content: flex-start;
+    align-items: flex-end;
+    text-align: left;
+}
+
+.text-bottom-right {
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+}
+
+/* 텍스트 색상 클래스 추가 */
+.text-white {
+    color: #fff !important;
+}
+
+.text-black {
+    color: #000 !important;
+}
+
+/* 배경색 클래스 추가 */
+.bg-dark {
+    background-color: #333 !important;
+}

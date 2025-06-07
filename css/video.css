@@ -1,0 +1,236 @@
+@charset "UTF-8";
+
+/* ───── CSS Variables ───── */
+
+
+/* ───── Grid System ───── */
+.grid {
+  display: grid;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.row-1 {
+  grid-template-columns: 0.85fr 1.7fr 0.45fr;
+  min-height: 11vh;
+}
+.row-2 {
+  grid-template-columns: 0.85fr 1.7fr 0.45fr;
+  min-height: 55vh;
+}
+.row-3 {
+  grid-template-columns: 0.85fr 1.7fr 0.45fr;
+  min-height: 30vh;
+}
+.row-4 {
+  grid-template-columns: 0.85fr 1.7fr 0.45fr;
+  min-height: 25vh;
+}
+
+/* ───── Main Section Layout ───── */
+.main-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  background-color: #000;
+  color: #fff;
+  min-height: 100vh;
+}
+
+.main-section > div > div {
+  border-right: 1px solid var(--grid-line);
+  border-bottom: 1px solid var(--grid-line);
+}
+
+.main-section > div > div:last-child {
+  border-right: none;
+}
+
+.main-section > div:last-child > div {
+  border-bottom: none;
+}
+
+/* ───── Cell Styles ───── */
+.cell {
+  border-right: 1px solid var(--grid-line);
+  border-bottom: 1px solid var(--grid-line);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  min-width: 0;
+  overflow-wrap: break-word;
+  position: relative;
+}
+
+.grid > div:last-child .cell {
+  border-bottom: none;
+}
+
+.grid .cell:last-child {
+  border-right: none;
+  border-left: 1px solid var(--grid-line);
+}
+
+/* ───── Menu & Logo Styles ───── */
+.menu-cell {
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  width: 100%;
+  transition: background 0.2s;
+  padding-left: clamp(2vw, 4vw, 5vw);
+}
+
+.menu-icon { 
+  width: clamp(36px, 6vw, 68px);
+  height: auto;
+  max-height: clamp(36px, 6vw, 68px);
+  max-width: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.menu-icon:hover {
+  transform: scale(1.05);
+}
+
+/* ───── Typography ───── */
+.service-label-cell {
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-left: clamp(2vw, 4vw, 5vw);
+  padding-top: 2vw;
+  font-family: var(--font-apple);
+  font-size: clamp(1.25vw, 2vw, 1.67vw);
+  color: white;
+  line-height: 1.6;
+  font-weight: 600;
+
+}
+
+.service-label-text {
+  font-family: var(--font-apple);
+  font-size: clamp(1.2rem, 2vw, 2rem);
+  line-height: clamp(2.5rem, 3.25vw, 3.25rem);
+  font-weight: 500;
+}
+
+.service-label-text span {
+  font-family: var(--font-Montserrat);
+  font-weight: 400;
+}
+
+/* ───── Video Section ───── */
+.video-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background-color: #f5f5f5;
+  width: 100%;
+  height: 100%;
+}
+
+/* ───── Description Section ───── */
+.description-cell {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: clamp(1.5rem, 2vw, 2rem);
+  text-align: left;
+}
+
+.description-text {
+  font-family: var(--font-apple);
+  font-size: clamp(1.25rem, 2vw, 2rem);
+  font-weight: 400;
+  line-height: clamp(1.8rem, 2.5vw, 2.5rem);
+  color: rgba(255, 255, 255, 0.8);
+
+}
+
+/* ───── Animation Classes ───── */
+.fade-box {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1.2s cubic-bezier(0.4, 0, 0.2, 1), transform 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.fade-box.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.instant-fade {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s, transform 0.8s;
+}
+
+.instant-fade.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.scroll-hidden {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1.2s, transform 1.2s;
+}
+
+.scroll-hidden.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ───── Responsive Design ───── */
+@media screen and (min-width: 769px) and (max-width: 1750px) {
+  .logo-dots {
+    width: clamp(28px, 4vw, 48px);
+    height: clamp(28px, 4vw, 48px);
+  }
+
+  .menu-icon {
+    width: clamp(28px, 4vw, 48px);
+    max-height: clamp(28px, 4vw, 48px);
+  }
+
+  .service-label-text {
+    font-size: clamp(1.2rem, 1.5vw, 1.5rem);
+    line-height: clamp(2.5rem, 3vw, 3rem);
+  }
+
+  .description-text {
+    font-size: clamp(0.9rem, 1.2vw, 1.2rem);
+    line-height: 1.4;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .cell {
+    padding: 1rem;
+    min-height: 150px;
+  }
+
+  .video-cell {
+    min-height: 300px;
+  }
+}
+
+/* ───── Page Transition ───── */
+body {
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+body.fade-out {
+  opacity: 0;
+}

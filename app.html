@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>어플 - 쉬운 언어 모형</title>
+    <link rel="icon" href="./img/join_favicon.png" type="image/x-icon" sizes="32x32">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fonts-archive/AppleSDGothicNeo/AppleSDGothicNeo.css" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="./css/reset.css" rel="stylesheet">
+    <link href="./css/app.css" rel="stylesheet">
+</head>
+<body>
+    <!-- 메인 섹션 -->
+    <section class="main-section" id="main">
+        <!-- 1열 3칸 -->
+        <div class="grid row-1">
+            <div class="cell menu-cell">
+                <span class="fade-box instant-fade">
+                    <img src="./img/menu.png" alt="메뉴" class="menu-icon" style="cursor: pointer" onclick="smoothNav('nav.html')" />
+                </span>
+            </div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
+
+        <!-- 2열 3칸 -->
+        <div class="grid row-2">
+            <div class="cell service-label-cell">
+                <span class="fade-box instant-fade service-label-text">
+                    어플<br><span>JO;IN App</span>
+                </span>
+            </div>
+            <div class="cell gif-cell">
+                <span class="fade-box scroll-hidden">
+                    <div class="gif-container">
+                        <img src="./gif/app-main.gif" alt="어플 GIF 01" class="app-gif">
+                    </div>
+                </span>
+            </div>
+            <div class="cell"></div>
+        </div>
+
+        <!-- 4열 4칸 -->
+        <div class="grid row-4">
+            <div class="cell"></div>
+            <div class="cell connection-text-cell">
+                <span class="fade-box scroll-hidden connection-text">
+                    키오스크를<br>어플과 연결합니다
+                </span>
+            </div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
+
+        <!-- 5열 3칸 -->
+        <div class="grid row-5">
+            <div class="cell"></div>
+            <div class="cell app-features-cell">
+                <div class="features-2x2-grid">
+                    <div class="feature-box">
+                        <div class="feature-img-wrap">
+                            <img src="./img/app/app-1-thumb.png" alt="역대 행사 모아보기" class="feature-static">
+                            <img src="./img/app/app-1.gif" alt="역대 행사 모아보기 애니메이션" class="feature-gif">
+                        </div>
+                        <div class="feature-bar">역대 행사 모아보기</div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-img-wrap">
+                            <img src="./img/app/app-2-thumb.png" alt="간편하게 시작하기" class="feature-static">
+                            <img src="./img/app/app-2.gif" alt="간편하게 시작하기 애니메이션" class="feature-gif">
+                        </div>
+                        <div class="feature-bar">간편하게 시작하기</div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-img-wrap">
+                            <img src="./img/app/app-3-thumb.png" alt="디지털 방명록/앨범 모아보기" class="feature-static">
+                            <img src="./img/app/app-3.gif" alt="디지털 방명록/앨범 모아보기 애니메이션" class="feature-gif">
+                        </div>
+                        <div class="feature-bar">디지털 방명록/앨범 모아보기</div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-img-wrap">
+                            <img src="./img/app/app-4-thumb.png" alt="경조사비 자동 보고서" class="feature-static">
+                            <img src="./img/app/app-4.gif" alt="경조사비 자동 보고서 애니메이션" class="feature-gif">
+                        </div>
+                        <div class="feature-bar">경조사비 자동 보고서</div>
+                    </div>
+                </div>
+            </div>
+            <div class="cell"></div>
+        </div>
+
+        <!-- 6열 4칸 -->
+        <div class="grid row-6">
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell simplicity-text-cell">
+                <span class="fade-box scroll-hidden simplicity-text">
+                    복잡함을<br>덜었습니다
+                </span>
+            </div>
+            <div class="cell"></div>
+        </div>
+
+        <!-- 7열 4칸 (funeral과 동일한 구조) -->
+        <div class="grid row-7">
+            <div class="cell"></div>
+            
+            <div class="cell app-steps-cell">
+                <span class="fade-box scroll-hidden">
+                    <div class="app-steps">
+                        <div class="step-indicators">
+                            <div class="step-indicator active" data-step="1">1</div>
+                            <div class="step-indicator" data-step="2">2</div>
+                            <div class="step-indicator" data-step="3">3</div>
+                            <div class="step-indicator" data-step="4">4</div>
+                        </div>
+                        <div class="step-content">
+                            <div class="step-panel active" id="step-panel-1">
+                                <h3>쉽고 편한 회원가입과 로그인</h3>
+                                <p>단계별로 안내되는 직관적인 UI로 쉽고 빠르게 회원가입을 완료할 수 있으며, 바로 로그인까지 편하게 이어집니다.</p>
+                            </div>
+                            <div class="step-panel" id="step-panel-2">
+                                <h3>경조사별로 묶어볼 수 있는 메뉴</h3>
+                                <p>사용자가 진행한 모든 경조사 행사부터, 결혼식, 돌잔치, 장례식 별로 나눠 볼 수 있게 메뉴가 구성되어있습니다.</p>
+                            </div>
+                            <div class="step-panel" id="step-panel-3">
+                                <h3>내 행사의 전부를 정리한 세부 페이지</h3>
+                                <p>진행한 각 행사의 경조사비 엑셀 파일부터 경조사별 콘텐츠 결과물까지, 하나의 세부 페이지에 정리되어 있습니다.</p>
+                            </div>
+                            <div class="step-panel" id="step-panel-4">
+                                <h3>마이 페이지</h3>
+                                <p>현장에서 조문객들이 직접 고인과 유가족들에게 추모 메세지를 남겨, 모두 함께 떠난 이를 기릴 수 있습니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                </span>
+            </div>
+
+            <div class="cell app-image-cell fade-box scroll-hidden">
+                <div class="app-image-wrapper">
+                    <img src="./img/app/iphone.png" alt="앱 화면 1" class="app-image active" id="app-image-1">
+                    <img src="/placeholder.svg?height=400&width=300" alt="앱 화면 2" class="app-image" id="app-image-2">
+                    <img src="/placeholder.svg?height=400&width=300" alt="앱 화면 3" class="app-image" id="app-image-3">
+                    <img src="/placeholder.svg?height=400&width=300" alt="앱 화면 4" class="app-image" id="app-image-4">
+                </div>
+            </div>
+            <div class="cell"></div>
+        </div>
+
+        <!-- 8열 3칸 -->
+        <div class="grid row-8">
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
+    </section>
+
+    <button id="scrollTopBtn" style="position:fixed; right:2vw; bottom:2vw; z-index:9999; width:48px; height:48px; border-radius:50%; background:#fff; color:#000; border:none; display:flex; align-items:center; justify-content:center; box-shadow:0 2px 8px rgba(0,0,0,0.08);">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <polygon points="10,4 16,14 4,14" fill="#000"/>
+      </svg>
+    </button>
+    <script>
+    document.getElementById('scrollTopBtn').onclick = function() {
+      window.scrollTo({top:0, behavior:'smooth'});
+    };
+    </script>
+
+    <script src="./js/app.js"></script>
+</body>
+</html>

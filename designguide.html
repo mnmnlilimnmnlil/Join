@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>디자인 가이드</title>
+    <link
+      rel="icon"
+      href="./img/join_favicon.png"
+      type="image/x-icon"
+      sizes="32x32"
+    />
+    <!-- fonts -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/fonts-archive/AppleSDGothicNeo/AppleSDGothicNeo.css"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- reset.css -->
+    <link href="./css/reset.css" rel="stylesheet" />
+    <!-- designguide.css -->
+    <link href="./css/designguide.css" rel="stylesheet" />
+  </head>
+  <body>
+    <section>
+      <!-- 1열: 상단 메뉴 -->
+      <div class="grid row-1">
+        <div class="cell menu-cell">
+          <span class="fade-box instant-fade">
+            <img
+              src="./img/menu.png"
+              alt="메뉴"
+              class="menu-icon"
+              style="cursor: pointer"
+              onclick="smoothNav('nav.html')"
+            />
+          </span>
+        </div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+      </div>
+
+      <!-- 2열: 서비스 페이지 형식 -->
+      <div class="grid row-2">
+        <div class="cell service-label-cell">
+          <span class="fade-box instant-fade service-label-text">
+            디자인 가이드<br /><span>Design Guide</span>
+          </span>
+        </div>
+        <div class="cell service-title-cell">
+          <span class="fade-box instant-fade service-title-text">
+            JO;IN의<br />감성을 보여줍니다
+          </span>
+        </div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+      </div>
+
+      <!-- 3열: 두 번째 칸만 배경/텍스트 -->
+      <div class="grid row-3">
+        <div class="cell"></div>
+        <div class="cell gray-bg">
+          <span class="fade-box instant-fade color-code" style="color: black; opacity: 1">#E7E7E7</span>
+        </div>
+        <div class="cell"></div>
+      </div>
+
+      <!-- 4열: 6칸짜리, 각 칸에 맞는 내용 -->
+      <div class="grid row-4">
+        <div class="cell"></div>
+        <div class="cell color-cell">
+          <span class="fade-box scroll-hidden text-left-bottom">Color</span>
+        </div>
+        <div class="cell">
+          <span class="fade-box scroll-hidden color-code">#D2F84D</span>
+          <span class="fade-box scroll-hidden big-kanji left-bottom">結</span>
+        </div>
+        <div class="cell">
+          <span class="fade-box scroll-hidden big-kanji right-top">葬</span>
+          <span class="fade-box scroll-hidden color-code left-bottom">#333333</span>
+        </div>
+        <div class="cell">
+          <span class="fade-box scroll-hidden color-code">#7588FF</span>
+          <span class="fade-box scroll-hidden big-kanji right-bottom">晩</span>
+        </div>
+        <div class="cell"></div>
+      </div>
+
+      <!-- 5열: 우측 하단 텍스트 -->
+      <div class="grid row-5">
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell service-title-cell" style="justify-content: flex-end">
+          <span class="fade-box scroll-hidden service-title-text" style="text-align: right">
+            경조사의 상징<br />'꽃'을 담다
+          </span>
+        </div>
+        <div class="cell"></div>
+      </div>
+
+      <!-- 6열: 로고 섹션 -->
+      <div class="grid row-6">
+        <div class="cell"></div>
+        <div class="cell logo-section-cell">
+          <span class="fade-box scroll-hidden logo-section-texts">
+            <span class="logo-section-title">로고<br /><span>logo</span></span>
+            <span class="logo-section-desc">
+              경조사 행사를 상징하는 요소인 '꽃'과 JO;IN의 '연결하다'라는<br> 의미를 합하여, 연결된 꽃의 느낌을 담아 로고를 제작했습니다.
+            </span>
+          </span>
+          <span class="fade-box scroll-hidden logo-section-image">
+            <img src="./img/designguide/designguide_logo.png" alt="로고" />
+          </span>
+        </div>
+        <div class="cell"></div>
+      </div>
+
+      <!-- 7열: 장례식 섹션 -->
+      <div class="grid row-7">
+        <div class="cell"></div>
+        <div class="cell">
+          
+            <div class="event-inner">
+              
+                <svg
+                  width="240"
+                  height="236"
+                  viewBox="0 0 240 236"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="event-img event-img-funeral"
+                >
+                  <path
+                    d="M119.763 116.333C119.857 116.248 119.953 116.158 120.045 116.073C120.137 115.988 120.233 115.898 120.325 115.809C104.983 98.7955 106.506 71.2246 122.596 49.4049C120.137 45.5387 117.256 41.8037 113.955 38.2808C90.9406 13.7058 56.3495 8.69374 36.7 27.0823C17.0484 45.4709 19.7764 80.2997 42.7926 104.875C46.0938 108.398 49.629 111.52 53.3262 114.228C76.1696 99.6133 103.791 99.9129 119.763 116.336V116.333Z"
+                    fill="currentColor"
+                  />
+                  <path
+                    d="M120.277 115.767C120.185 115.85 120.091 115.938 119.999 116.023C119.908 116.108 119.816 116.196 119.726 116.283C135.532 133.165 134.035 161.073 117.659 183.126C120.004 186.732 122.721 190.218 125.812 193.516C148.673 217.925 183.135 222.805 202.787 204.417C222.436 186.028 219.837 151.331 196.976 126.922C193.887 123.622 190.588 120.683 187.138 118.107C164.043 132.984 136.085 132.642 120.277 115.767Z"
+                    fill="currentColor"
+                  />
+                  <path
+                    d="M119.726 116.283C119.553 116.097 119.381 115.916 119.206 115.736C102.345 131.214 74.8313 129.813 52.9855 113.858C49.2293 116.266 45.6 119.076 42.1741 122.284C17.6921 145.192 12.7239 179.651 31.074 199.243C49.424 218.836 84.1464 216.147 108.626 193.238C112.017 190.065 115.032 186.673 117.663 183.126C102.739 160.154 103.004 132.231 119.731 116.283H119.726Z"
+                    fill="currentColor"
+                  />
+                  <path
+                    d="M131.374 38.8056C127.946 42.0136 124.903 45.4469 122.252 49.0354C136.741 71.8741 136.325 99.4121 119.765 115.209C119.933 115.397 120.102 115.581 120.274 115.765C137.296 100.134 165.189 101.706 187.136 118.107C190.85 115.717 194.434 112.931 197.824 109.76C222.306 86.8513 227.277 52.3943 208.927 32.8029C190.577 13.2094 155.854 15.897 131.372 38.8056H131.374Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              
+              
+                <div class="event-text event-text-funeral">
+                  장례식<br /><span>mum</span>
+                </div>
+              
+            </div>
+        </div>
+        <div class="cell funeral-desc-cell">
+          
+            <div class="funeral-desc-text">
+              JO;IN은 장례식, 돌잔치, 결혼식이라는 세 가지 경조사 키오스크 서비스를 각각의 꽃으로 상징화했습니다. 조화로운 디자인을 위해 장례식은 국화, 돌잔치는 수국, 결혼식은 프리지아로 표현했습니다.
+            </div>
+        </div>
+        <div class="cell"></div>
+      </div>
+
+      <!-- 8열: 돌잔치/결혼식 섹션 -->
+      <div class="grid row-8">
+        <div class="cell"></div>
+        <div class="cell">
+          
+            <div class="event-inner">
+              
+                <div class="event-text event-text-left-top">
+                  돌잔치<br /><span>hydrangea</span>
+                </div>
+              
+              
+                <svg
+                  width="240"
+                  height="241"
+                  viewBox="0 0 240 241"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="event-img event-img-top"
+                >
+                  <path
+                    d="M170.25 121.111C197.725 121.111 220 98.7492 220 71.1665C220 43.5838 197.725 21.222 170.25 21.222C142.775 21.222 120.562 43.5239 120.502 71.0555H120.5C120.5 71.0178 120.5 70.9822 120.5 70.9445C120.5 43.3618 98.2253 21 70.75 21C43.2747 21 21 43.3618 21 70.9445C21 98.5272 43.2747 120.889 70.75 120.889C43.2747 120.889 21 143.251 21 170.834C21 198.416 43.2747 220.778 70.75 220.778C98.2253 220.778 120.5 198.416 120.5 170.834H120.502C120.502 170.907 120.5 170.982 120.5 171.055C120.5 198.638 142.775 221 170.25 221C197.725 221 220 198.638 220 171.055C220 143.473 197.725 121.111 170.25 121.111ZM149.474 93.848C144.004 102.563 136.513 111.997 128.058 120.938C137.941 131.353 146.684 142.649 152.393 153.166C141.917 147.433 130.669 138.663 120.297 128.743C109.924 138.663 98.6742 147.435 88.2001 153.166C93.9136 142.647 102.652 131.353 112.536 120.938C104.085 111.999 96.5957 102.569 91.1188 93.848C90.0995 92.1854 89.0978 90.505 88.2001 88.7225C89.9756 89.626 91.6494 90.6293 93.3055 91.6526C101.989 97.1465 111.388 104.669 120.297 113.16C129.201 104.674 138.6 97.1509 147.288 91.6526C148.944 90.6293 150.618 89.6237 152.393 88.7225C151.493 90.505 150.494 92.1854 149.474 93.848Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              
+            </div>
+          
+        </div>
+        <div class="cell">
+          
+            <div class="event-inner">
+              
+                <div class="event-text event-text-left-bottom">
+                  결혼식<br /><span>freesia</span>
+                </div>
+              
+              
+                <svg
+                  width="240"
+                  height="240"
+                  viewBox="0 0 240 240"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="event-img event-img-bottom"
+                >
+                  <path
+                    d="M220 67.9612V20H172.279C145.037 20 122.694 41.0729 120.501 67.8834C118.306 41.0729 95.963 20 68.7208 20H21V67.9612C21 95.3405 41.9673 117.796 68.6434 120C41.9673 122.204 21 144.659 21 172.039V220H68.7208C95.963 220 118.306 198.927 120.499 172.117C122.692 198.927 145.035 220 172.277 220H219.998V172.039C219.998 144.659 199.031 122.204 172.354 120C199.031 117.796 219.998 95.3405 219.998 67.9612H220ZM120.362 157.033C116.331 127.255 113.065 123.973 83.4375 119.922C113.065 115.871 116.331 112.589 120.362 82.8119C124.393 112.589 127.658 115.871 157.286 119.922C127.658 123.973 124.393 127.255 120.362 157.033Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              
+            </div>
+          
+        </div>
+        <div class="cell"></div>
+      </div>
+
+      <!-- 9열: 가독성 텍스트 -->
+      <div class="grid row-9">
+        <div class="cell"></div>
+        <div class="cell service-title-cell">
+          <span class="fade-box scroll-hidden service-title-text">최상의 가독성을<br />추구한다</span>
+        </div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+      </div>
+
+      <!-- 10열: KoddiUD OnGothic -->
+      <div class="grid row-10">
+        <div class="cell"></div>
+        <div class="cell font-preview-cell">
+          <span class="fade-box scroll-hidden font-preview-block">
+            <span class="font-preview-line1">
+              <span id="fontPreviewText1a" class="font-preview-text">동해물과 백두산이 마르고 닳도록</span>
+            </span>
+            <span class="font-preview-row font-preview-row_1">
+              <span id="fontPreviewText1b" class="font-preview-text">123456790/?!</span>
+              <input id="fontWeightSlider1" type="range" min="100" max="900" step="1" value="100" class="font-slider-bar" />
+            </span>
+          </span>
+        </div>
+        <div class="cell font-info-cell">
+          <span class="fade-box scroll-hidden font-info-text">KoddiUD<br />OnGothic</span>
+        </div>
+        <div class="cell"></div>
+      </div>
+
+      <div class="grid row-11">
+        <div class="cell"></div>
+        <div class="cell font-info-cell font-info-cell-top-left">
+          <span class="fade-box scroll-hidden font-info-text">Montserrat</span>
+        </div>
+        <div class="cell font-preview-cell">
+          <span class="fade-box scroll-hidden font-preview-block">
+            <span class="font-preview-line1">
+              <span id="fontPreviewText2a" class="font-preview-text montserrat-preview">the fox jumped over the dog</span>
+            </span>
+            <span class="font-preview-row font-preview-row_2">
+              <input id="fontWeightSlider2" type="range" min="100" max="900" step="1" value="100" class="font-slider-bar" />
+              <span id="fontPreviewText2b" class="font-preview-text montserrat-preview">123456790/?!</span>
+            </span>
+          </span>
+        </div>
+        <div class="cell"></div>
+      </div>
+
+      <div class="grid row-12">
+        <div class="cell"></div>
+        <div class="cell font-preview-cell">
+          <span class="fade-box scroll-hidden font-preview-block">
+            <span class="font-preview-line1">
+              <span id="fontPreviewText3a" class="font-preview-text apple-sd-preview">동해물과 백두산이 마르고 닳도록</span>
+            </span>
+            <span class=".font-preview-row font-preview-row_3">
+              <span id="fontPreviewText3b" class="font-preview-text apple-sd-preview">123456790/?!</span>
+              <input id="fontWeightSlider3" type="range" min="100" max="900" step="1" value="100" class="font-slider-bar" />
+            </span>
+          </span>
+        </div>
+        <div class="cell font-info-cell">
+          <span class="fade-box scroll-hidden font-info-text">Apple SD<br />Gothic Neo</span>
+        </div>
+        <div class="cell"></div>
+      </div>
+
+      <div class="grid row-13">
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+      </div>
+    </section>
+
+    <button id="scrollTopBtn" style="position:fixed; right:2vw; bottom:2vw; z-index:9999; width:48px; height:48px; border-radius:50%; background:#fff; color:#000; border:none; display:flex; align-items:center; justify-content:center; box-shadow:0 2px 8px rgba(0,0,0,0.08);">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <polygon points="10,4 16,14 4,14" fill="#000"/>
+      </svg>
+    </button>
+    <script>
+    document.getElementById('scrollTopBtn').onclick = function() {
+      window.scrollTo({top:0, behavior:'smooth'});
+    };
+    </script>
+
+    <!-- JavaScript -->
+    <script src="./js/designguide.js"></script>
+  </body>
+</html>

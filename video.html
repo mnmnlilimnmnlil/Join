@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>소개 영상</title>
+    <link rel="icon" href="./img/join_favicon.png" type="image/x-icon" sizes="32x32">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fonts-archive/AppleSDGothicNeo/AppleSDGothicNeo.css" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="./css/reset.css" rel="stylesheet">
+    <link href="./css/video.css" rel="stylesheet">
+</head>
+<body>
+    <!-- 메인 섹션 -->
+    <section class="main-section" id="main">
+        <!-- 1열 3칸 -->
+        <div class="grid row-1">
+            <div class="cell menu-cell">
+                <span class="fade-box instant-fade">
+                    <img src="./img/menu.png" alt="메뉴" class="menu-icon" style="cursor: pointer" onclick="smoothNav('nav.html')">
+                </span>
+            </div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
+
+        <!-- 2열 3칸 -->
+        <div class="grid row-2">
+            <div class="cell service-label-cell">
+                <span class="fade-box instant-fade service-label-text">
+                    소개 영상<br><span>Introductory Video</span>
+                </span>
+            </div>
+            <div class="cell video-cell">
+                <iframe 
+                    width="100%" 
+                    height="100%" 
+                    src="https://www.youtube.com/embed/sOuomMt5op8"
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="cell"></div>
+        </div>
+
+        <!-- 3열 3칸 -->
+        <div class="grid row-3">
+            <div class="cell"></div>
+            <div class="cell description-cell">
+                <span class="fade-box instant-fade description-content">
+                    <p class="description-text">
+                        경조사 행사에서 마음을 전하는 방식을 조금 더 간편하고 조금 더 따뜻하게.<br>
+                        진심을 더 쉽고, 더 정중하게 전달하도록 도와드립니다.<br>
+                        JO;IN, 소중한 순간을 위한 스마트한 연결을 해드립니다.
+                    </p>
+                </span>
+            </div>
+            <div class="cell"></div>
+        </div>
+
+        <!-- 4열 3칸 -->
+        <div class="grid row-4">
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
+    </section>
+
+    <script src="./js/video.js"></script>
+</body>
+</html>

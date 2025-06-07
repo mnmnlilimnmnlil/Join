@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOIN</title>
+    <link rel="icon" href="./img/join_favicon.png" type="image/x-icon" sizes="32x32">
+    <!-- fonts -->
+
+    <!-- font - 1 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fonts-archive/AppleSDGothicNeo/AppleSDGothicNeo.css" type="text/css"/>
+    <!-- font - 2 -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- reset.css -->
+    <link href="./css/reset.css" rel="stylesheet">
+    <!-- Start style -->
+    <link href="./css/index.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- 로딩 화면 -->
+    <div class="loader-screen" id="loader">
+        <div class="wave-container">
+            <svg id="loaderSVG" width="300" height="300" viewBox="0 0 455 445" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Fill paths (bottom layer) -->
+                <path id="loaderFill1" d="M394.751 243.451C378.284 235.138 365.919 234.234 348.181 231.519C282.314 221.397 229.793 171.462 218.584 106.938C217.602 101.283 217.255 95.5149 216.331 89.8599C207.433 36.4196 157.223 -2.03484 102.045 1.18855C49.6396 4.29883 6.24796 45.9766 1.45234 96.9853C-3.74773 152.179 36.4661 202.848 92.2224 211.726C97.1914 212.518 102.276 212.744 107.245 213.536C173.806 223.772 226.095 274.498 236.9 339.644C238.864 351.576 239.384 361.585 243.66 373.291C267.349 438.381 348.47 465.017 407.231 425.431C475.063 379.738 467.552 280.209 394.809 243.508L394.751 243.451Z" fill="white" opacity="0"/>
+                <path id="loaderFill2" d="M109.5 232C49.5761 232 1 279.457 1 338C1 396.543 49.5761 444 109.5 444C169.424 444 218 396.543 218 338C218 279.457 169.424 232 109.5 232Z" fill="white" opacity="0"/>
+                <path id="loaderFill3" d="M346 1C286.352 1 238 48.4568 238 107C238 165.543 286.352 213 346 213C405.648 213 454 165.543 454 107C454 48.4568 405.648 1 346 1Z" fill="white" opacity="0"/>
+                
+                <!-- Stroke paths (top layer) -->
+                <path id="loaderPath" d="M394.751 243.451C378.284 235.138 365.919 234.234 348.181 231.519C282.314 221.397 229.793 171.462 218.584 106.938C217.602 101.283 217.255 95.5149 216.331 89.8599C207.433 36.4196 157.223 -2.03484 102.045 1.18855C49.6396 4.29883 6.24796 45.9766 1.45234 96.9853C-3.74773 152.179 36.4661 202.848 92.2224 211.726C97.1914 212.518 102.276 212.744 107.245 213.536C173.806 223.772 226.095 274.498 236.9 339.644C238.864 351.576 239.384 361.585 243.66 373.291C267.349 438.381 348.47 465.017 407.231 425.431C475.063 379.738 467.552 280.209 394.809 243.508L394.751 243.451Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+                <path id="loaderCircle1" d="M109.5 232C49.5761 232 1 279.457 1 338C1 396.543 49.5761 444 109.5 444C169.424 444 218 396.543 218 338C218 279.457 169.424 232 109.5 232Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+                <path id="loaderCircle2" d="M346 1C286.352 1 238 48.4568 238 107C238 165.543 286.352 213 346 213C405.648 213 454 165.543 454 107C454 48.4568 405.648 1 346 1Z" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-opacity="0.7"/>
+            </svg>
+        </div>
+        <div class="loader-percent font-Montserrat" id="loaderText">0%</div>
+    </div>
+
+    <!-- 인트로 섹션 -->
+    <section class="intro-section" id="intro" style="display: none">
+        <!-- 1줄 3칸 -->
+        <div class="grid-3col col_height_1">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <!-- 2줄 3칸 -->
+        <div class="grid-3col col_height_2">
+            <div class="intro-cell delay-1">
+                <div class="scroll-hidden">
+                    <h1 class="h1_1 font-Montserrat">JO</h1>
+                </div>
+            </div>
+            <div class="intro-cell delay-2">
+                <div class="scroll-hidden">
+                    <h1 class="h1_2 font-Montserrat" id="rollingText">IN</h1>
+                    <p class="p_1">
+                        무언가를 연결하거나 결합하다<br />To connect or fasten things
+                        together
+                    </p>
+                </div>
+            </div>
+            <div></div>
+        </div>
+
+        <!-- 3줄 4칸 -->
+        <div class="grid-3col col_height_3 ">
+            <div></div>
+            <div class="intro-cell">
+                <div class="gif-container scroll-hidden">
+                    <img src="./gif/main-fdrop.gif" alt="임시 이미지" class="temp-image">
+                </div>
+            </div>
+            <div></div>
+        </div>
+
+        <!-- 4줄 4칸 -->
+        <div class="grid-3col col_height_4">
+            <div></div>
+            <div class="intro-cell">
+                <div class="scroll-hidden">
+                    <p class="p_2">
+                        조인은 경조사와 관련된 모든 서비스를<br> 연결하고 일원화한다는 의미를
+                        담고 있습니다.<br>'JO'는 경조사를, 'IN'은 사람들을 연결하는
+                        역할을 나타냅니다.
+                    </p>
+                </div>
+            </div>
+            <div></div>
+        </div>
+
+        <!-- 5줄 4칸 -->
+        <div class="grid-4col-2 col_height_5">
+            <div></div>
+            <div class="intro-cell">
+                <div class="scroll-hidden">
+                    <h2 class="h2_2">현금을 주고받는<br />불편함을 줄입니다</h2>
+                </div>
+            </div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <!-- 6줄 3칸 -->
+        <div class="grid-3col col_height_6">
+            <div></div>
+            <div class="intro-cell" style="flex-direction: column; align-items: center; justify-content: center;">
+                <img src="./img/index/card_1.png" alt="카드1" class="feedback-card-img">
+                <img src="./img/index/card_2.png" alt="카드2" class="feedback-card-img">
+                <img src="./img/index/card_3.png" alt="카드3" class="feedback-card-img">
+            </div>
+            <div></div>
+        </div>
+
+        <!-- 8줄 3칸 -->
+        <div class="grid-3col col_height_8">
+            <div></div>
+            <div class="intro-cell">
+                <div class="digital-message">
+                    <div class="message-line">
+                        <span class="text-main color-lime">진심</span>
+                        <span class="symbol color-lime">
+                          <svg width="102" height="101" viewBox="0 0 102 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M50.4792 50.7677C50.5268 50.7246 50.5755 50.6792 50.622 50.6361C50.6685 50.5929 50.7172 50.5476 50.7637 50.5022C43.0008 41.8937 43.7712 27.9431 51.9127 16.9026C50.6685 14.9463 49.2107 13.0564 47.5403 11.2739C35.8954 -1.16083 18.3926 -3.6969 8.45013 5.60756C-1.49344 14.912 -0.113094 32.535 11.5329 44.9698C13.2033 46.7523 14.9921 48.3324 16.8628 49.7022C28.4214 42.3075 42.3975 42.4591 50.4792 50.7689V50.7677Z" fill="currentColor"/>
+                            <path d="M50.7394 50.4814C50.6929 50.5235 50.6453 50.5678 50.5988 50.6109C50.5523 50.6541 50.5059 50.6983 50.4605 50.7426C58.4581 59.2847 57.7009 73.4057 49.4144 84.5646C50.6011 86.3892 51.9759 88.1529 53.54 89.8215C65.1074 102.172 82.5449 104.642 92.4885 95.3374C102.431 86.0329 101.116 68.4763 89.5485 56.1256C87.9855 54.456 86.3162 52.9688 84.5706 51.6654C72.8847 59.1928 58.7381 59.0202 50.7394 50.4814Z" fill="currentColor"/>
+                            <path d="M50.4606 50.7422C50.3732 50.6482 50.2857 50.5563 50.1972 50.4656C41.6661 58.2973 27.7442 57.5881 16.6904 49.5151C14.7898 50.7334 12.9534 52.1552 11.2199 53.7784C-1.16778 65.37 -3.68162 82.806 5.60333 92.7191C14.8883 102.633 32.4575 101.272 44.8441 89.6806C46.5598 88.0751 48.0852 86.359 49.4168 84.5642C41.8653 72.9406 41.9993 58.8118 50.4629 50.7422H50.4606Z" fill="currentColor"/>
+                            <path d="M56.3546 11.5395C54.62 13.1627 53.0803 14.8999 51.7387 16.7157C59.0699 28.2718 58.8596 42.2058 50.4801 50.1991C50.5653 50.2942 50.6506 50.3872 50.738 50.4801C59.3511 42.571 73.4644 43.3665 84.5692 51.6652C86.4488 50.4558 88.2619 49.0461 89.9777 47.4417C102.365 35.8501 104.88 18.4152 95.5953 8.5022C86.3104 -1.41193 68.7412 -0.0520552 56.3535 11.5395H56.3546Z" fill="currentColor"/>
+                          </svg>
+                        </span>
+                        <div class="line-horizontal"></div>
+                        <span class="text-side color-white">은</span>
+                    </div>
+                    <div class="message-line">
+                        <span class="text-main color-blue">디지털로도</span>
+                        <span class="symbol color-blue">
+                          <svg width="101" height="101" viewBox="0 0 101 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M100.766 24.2204V0H76.6583C62.8959 0 51.6087 10.6418 50.5006 24.1811C49.3915 10.6418 38.1043 0 24.3419 0H0.233887V24.2204C0.233887 38.047 10.8263 49.3868 24.3028 50.5C10.8263 51.6132 0.233887 62.953 0.233887 76.7796V101H24.3419C38.1043 101 49.3915 90.3582 50.4995 76.8189C51.6076 90.3582 62.8948 101 76.6572 101H100.765V76.7796C100.765 62.953 90.1728 51.6132 76.6963 50.5C90.1728 49.3868 100.765 38.047 100.765 24.2204H100.766ZM50.4303 69.2014C48.394 54.164 46.7442 52.5065 31.7766 50.4607C46.7442 48.415 48.394 46.7575 50.4303 31.72C52.4665 46.7575 54.1163 48.415 69.084 50.4607C54.1163 52.5065 52.4665 54.164 50.4303 69.2014Z" fill="currentColor"/>
+                          </svg>
+                        </span>
+                    </div>
+                    <div class="message-line">
+                        <span class="text-main color-gray">전해질</span>
+                        <span class="symbol color-gray">
+                          <svg width="102" height="101" viewBox="0 0 102 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M76.1331 50.556C90.0133 50.556 101.266 39.2633 101.266 25.3341C101.266 11.4048 90.0133 0.112098 76.1331 0.112098C62.2529 0.112098 51.0312 11.3745 51.0011 25.278H51C51 25.259 51 25.241 51 25.222C51 11.2927 39.747 0 25.8669 0C11.9867 0 0.733765 11.2927 0.733765 25.222C0.733765 39.1512 11.9867 50.444 25.8669 50.444C11.9867 50.444 0.733765 61.7367 0.733765 75.6659C0.733765 89.5952 11.9867 100.888 25.8669 100.888C39.747 100.888 51 89.5952 51 75.6659H51.0011C51.0011 75.7029 51 75.741 51 75.778C51 89.7073 62.2529 101 76.1331 101C90.0133 101 101.266 89.7073 101.266 75.778C101.266 61.8488 90.0133 50.556 76.1331 50.556ZM65.6375 36.7882C62.874 41.1892 59.0895 45.9533 54.818 50.4686C59.8111 55.7282 64.2278 61.4329 67.112 66.7441C61.8195 63.8486 56.1372 59.4196 50.8972 54.41C45.6572 59.4196 39.9738 63.8497 34.6825 66.7441C37.5689 61.4318 41.9833 55.7282 46.9764 50.4686C42.7072 45.9544 38.9238 41.1925 36.1569 36.7882C35.642 35.9486 35.136 35.1 34.6825 34.1999C35.5794 34.6561 36.425 35.1628 37.2617 35.6796C41.6482 38.454 46.3967 42.253 50.8972 46.5407C55.3955 42.2552 60.144 38.4562 64.5328 35.6796C65.3694 35.1628 66.215 34.655 67.112 34.1999C66.6573 35.1 66.1524 35.9486 65.6375 36.7882Z" fill="currentColor"/>
+                          </svg>
+                        </span>
+                        <span class="text-side color-white">수</span>
+                    </div>
+                    <div class="message-line">
+                        <div class="line-horizontal"></div>
+                        <span class="text-main color-white">있습니다.</span>
+                    </div>
+                </div>
+            </div>
+            <div></div>
+        </div>
+
+        <!-- 9줄 3칸 -->
+        <div class="grid-6col-last col_height_9">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </section>
+
+    <!-- 네비게이션 섹션 -->
+    <section id="main" class="nav-hidden">
+        <div class="container">
+            <div class="row">
+                <div class="cell menu-cell">
+                    <img src="./img/menu.png" alt="메뉴" class="menu-icon" style="cursor: pointer;" onclick="smoothNav('nav.html')">
+                </div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+            <div class="row">
+                <div class="cell left-align-cell">About</div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <a href="./service.html" class="cell lime hover-trigger text-top-left text-black">서비스 소개</a>
+                <div class="cell"></div>
+            </div>
+            <div class="row">
+                <div class="cell left-align-cell">Experience</div>
+                <div class="cell"></div>
+                <a href="./easy-language-model.html" class="cell lime hover-trigger col-span-2 text-bottom-right text-black">쉬운 언어 모형</a>
+                <div class="cell"></div>
+                <a href="./video.html" class="cell blue hover-trigger text-bottom-right text-white">소개 영상</a>
+            </div>
+            <div class="row">
+                <div class="cell left-align-cell">Product & Design</div>
+                <a href="./designguide.html" class="cell blue hover-trigger col-span-2 text-top-left text-white">디자인 가이드</a>
+                <div class="cell"></div>
+                <a href="./app.html" class="cell bg-dark hover-trigger text-top-left text-white">어플</a>
+                <div class="cell"></div>
+            </div>
+            <div class="row">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <a href="./funeral.html" class="cell bg-dark hover-trigger text-top-left text-white">장례식</a>
+                <a href="./weding.html" class="cell lime hover-trigger text-bottom-left text-black">결혼식</a>
+                <a href="./firstbirthday.html" class="cell blue hover-trigger text-top-right text-white">돌잔치</a>
+                <div class="cell"></div>
+            </div>
+            <div class="row">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

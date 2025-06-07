@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>서비스 소개 - 쉬운 언어 모형</title>
+    <link rel="icon" href="./img/join_favicon.png" type="image/x-icon" sizes="32x32">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fonts-archive/AppleSDGothicNeo/AppleSDGothicNeo.css" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="./css/reset.css" rel="stylesheet">
+    <link href="./css/service.css" rel="stylesheet">
+</head>
+<body>
+    <!-- 메인 섹션 -->
+    <section class="main-section" id="main">
+        <!-- 1열 3칸 -->
+        <div class="grid row-1">
+            <div class="cell menu-cell">
+                <span class="fade-box instant-fade">
+                    <img src="./img/menu.png" alt="메뉴" class="menu-icon" style="cursor: pointer" onclick="smoothNav('nav.html')" />
+                </span>
+            </div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
+
+        <!-- 2열 3칸 -->
+        <div class="grid row-2">
+            <div class="cell service-label-cell">
+                <span class="fade-box instant-fade service-label-text">
+                    서비스 소개<br><span>About JO;IN</span>
+                </span>
+            </div>
+            <div class="cell service-title-cell">
+                <span class="fade-box instant-fade service-title-text">
+                    경조사 행사에서<br>사람과 사람을 연결합니다
+                </span>
+            </div>
+            <div class="cell"></div>
+        </div>
+
+        <!-- 3열 2칸 -->
+        <div class="grid row-3">
+            <div class="cell service-steps-cell">
+                <span class="fade-box scroll-hidden">
+                    <div class="service-steps">
+                        <div class="step-indicators">
+                            <div class="step-indicator active" data-step="1">1</div>
+                            <div class="step-indicator" data-step="2">2</div>
+                            <div class="step-indicator" data-step="3">3</div>
+                        </div>
+                        <div class="step-content">
+                            <div class="step-panel active" id="step-panel-1">
+                                <h3>이제는<br>디지털화<br>시대</h3>
+                                <p>경조사에도<br>변화가 필요하지<br>않을까요?</p>
+                            </div>
+                            <div class="step-panel" id="step-panel-2">
+                                <h3>모두가 쉽게<br>사용할 수<br>있는 방법</h3>
+                                <p>키오스크가<br>답일까요?</p>
+                            </div>
+                            <div class="step-panel" id="step-panel-3">
+                                <h3>경조사에있는<br>모두의 불편을<br>해결</h3>
+                                <p>JO;IN의<br>시작입니다</p>
+                            </div>
+                        </div>
+                    </div>
+                </span>
+            </div>
+            <div class="cell service-image-cell">
+                <span class="fade-box scroll-hidden">
+                    <div class="service-image-section">
+                        <div class="service-image active" id="service-image-1">
+                            <img src="./gif/service01.gif" alt="서비스 이미지 1" class="service-img" />
+                        </div>
+                        <div class="service-image" id="service-image-2">
+                            <img src="./gif/service02.gif" alt="서비스 이미지 2" class="service-img" />
+                        </div>
+                        <div class="service-image" id="service-image-3">
+                            <img src="./gif/service03.gif" alt="서비스 이미지 3" class="service-img" />
+                        </div>
+                    </div>
+                </span>
+            </div>
+        </div>
+
+        <!-- 4열 4칸 -->
+        <div class="grid row-4">
+            <div class="cell"></div>
+            <div class="cell user-first-text-cell">
+                <span class="fade-box scroll-hidden user-first-text">
+                    사용자를<br>먼저 생각합니다
+                </span>
+            </div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
+
+        <!-- 5열 4칸 -->
+        <div class="grid row-5">
+            <div class="cell"></div>
+            <div class="cell feature-images-cell">
+                <span class="fade-box scroll-hidden">
+                    <div class="feature-images-container">
+                        <div class="feature-image-large">
+                            <img src="./img/service/blue.png" alt="큰 기능 이미지" class="feature-img-large" />
+                        </div>
+                        <div class="feature-images-small">
+                            <div class="feature-image-small">
+                                <img src="./img/service/green.png" alt="작은 기능 이미지 1" class="feature-img-small" />
+                            </div>
+                            <div class="feature-image-small">
+                                <img src="./img/service/gray.png" alt="작은 기능 이미지 2" class="feature-img-small" />
+                            </div>
+                        </div>
+                    </div>
+                </span>
+            </div>
+            <div class="cell feature-text-cell">
+                <span class="fade-box scroll-hidden">
+                    <div class="feature-text-content">
+                        <h3>접근성과 배려를<br>위한 서비스<br> 설계의 시작</h3>
+                        <p>
+                            키오스크 화면과 함께<br>
+                            지원되는 음성 안내<br>
+                            서비스부터 큰글씨 모<br>드,
+                            그리고 쉬운 언어<br> 
+                            모형까지.
+                            JO;IN은 단<br> 한명의 사용자도
+                            소외<br> 받지 않도록 합니다.
+                        </p>
+                    </div>
+                </span>
+            </div>
+            <div class="cell"></div>
+        </div>
+
+        <!-- 6열 4칸 -->
+        <div class="grid row-6">
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell experience-text-cell">
+                <span class="fade-box scroll-hidden experience-text">
+                    경험의 출발점을<br>만듭니다
+                </span>
+            </div>
+            <div class="cell"></div>
+        </div>
+
+        <!-- 7열 4칸 -->
+        <div class="grid row-7">
+            <div class="cell"></div>
+            <div class="cell persona-title-cell">
+                <span class="fade-box scroll-hidden persona-title">
+                    User Persona
+                </span>
+            </div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
+
+        <!-- 8열 3칸 -->
+        <div class="grid row-8">
+            <div class="cell"></div>
+            <div class="cell persona-image-cell">
+                <span class="fade-box scroll-hidden">
+                    <div class="persona-image-container">
+                        <img src="./img/service/persona01.png" alt="페르소나 이미지 1" class="persona-img" />
+                    </div>
+                </span>
+            </div>
+            <div class="cell"></div>
+        </div>
+
+        <!-- 9열 3칸 -->
+        <div class="grid row-9">
+            <div class="cell"></div>
+            <div class="cell persona-image-cell">
+                <span class="fade-box scroll-hidden">
+                    <div class="persona-image-container">
+                        <img src="./img/service/persona02.png" alt="페르소나 이미지 2" class="persona-img" />
+                    </div>
+                </span>
+            </div>
+            <div class="cell"></div>
+        </div>
+
+        <!-- 10열 3칸 -->
+        <div class="grid row-10">
+            <div class="cell"></div>
+            <div class="cell persona-image-cell">
+                <span class="fade-box scroll-hidden">
+                    <div class="persona-image-container">
+                        <img src="./img/service/persona03.png" alt="페르소나 이미지 3" class="persona-img" />
+                    </div>
+                </span>
+            </div>
+            <div class="cell"></div>
+        </div>
+
+        <!-- 11열 3칸 -->
+        <div class="grid row-11">
+            <div class="cell"></div>
+            <div class="cell persona-image-cell">
+                <span class="fade-box scroll-hidden">
+                    <div class="persona-image-container">
+                        <img src="./img/service/persona04.png" alt="페르소나 이미지 4" class="persona-img" />
+                    </div>
+                </span>
+            </div>
+            <div class="cell"></div>
+        </div>
+
+        <!-- 12열 3칸 -->
+        <div class="grid row-12">
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
+
+        <!-- 13열 1칸 -->
+        <div class="grid row-13">
+            <div class="cell final-image-cell">
+                <span class="fade-box scroll-hidden">
+                    <div class="final-image-container">
+                        <img src="./gif/first-last.gif" alt="마지막 큰 이미지" class="final-img" />
+                    </div>
+                </span>
+            </div>
+        </div>
+
+        <!-- 14열 3칸 -->
+        <div class="grid row-14">
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
+    </section>
+
+    <button id="scrollTopBtn" style="position:fixed; right:2vw; bottom:2vw; z-index:9999; width:48px; height:48px; border-radius:50%; background:#fff; color:#000; border:none; display:flex; align-items:center; justify-content:center; box-shadow:0 2px 8px rgba(0,0,0,0.08);">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <polygon points="10,4 16,14 4,14" fill="#000"/>
+      </svg>
+    </button>
+    <script>
+    document.getElementById('scrollTopBtn').onclick = function() {
+      window.scrollTo({top:0, behavior:'smooth'});
+    };
+    </script>
+
+    <script src="./js/service.js"></script>
+</body>
+</html>

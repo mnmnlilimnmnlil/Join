@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>돌잔치</title>
+    <link
+      rel="icon"
+      href="./img/join_favicon.png"
+      type="image/x-icon"
+      sizes="32x32"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/fonts-archive/AppleSDGothicNeo/AppleSDGothicNeo.css"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./css/reset.css" rel="stylesheet" />
+    <link href="./css/funeral.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- 메인 섹션 -->
+    <section class="main-section" id="main">
+      <!-- 1열 3칸 -->
+      <div class="grid row-1">
+        <div class="cell menu-cell">
+          <span class="fade-box instant-fade">
+            <img
+              src="./img/menu.png"
+              alt="메뉴"
+              class="menu-icon"
+              style="cursor: pointer"
+              onclick="smoothNav('nav.html')"
+            />
+          </span>
+        </div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+      </div>
+
+      <!-- 2열 4칸 -->
+      <div class="grid row-2">
+        <div class="cell service-label-cell">
+          <span class="fade-box instant-fade service-label-text">
+            돌잔치<br /><span>First Birthday</span>
+          </span>
+        </div>
+        <div class="cell"></div>
+        <div class="cell service-title-cell">
+          <span class="fade-box instant-fade service-title-text">
+            아이의 첫 순간을<br/>간직합니다
+          </span>
+        </div>
+        <div class="cell"></div>
+      </div>
+
+      <!-- 3열 3칸 -->
+      <div class="grid row-3">
+        <div class="cell"></div>
+        <div class="cell image-cell">
+          <span class="fade-box scroll-hidden">
+            <div class="main-image-section">
+              <div class="main-image active" id="main-image-1">
+                <img
+                  src="./gif/first-1.gif"
+                  alt="축하금 보내기"
+                  class="tab-image"
+                />
+              </div>
+              <div class="main-image" id="main-image-2">
+                <img
+                  src="./gif/first-2.gif"
+                  alt="축하메세지"
+                  class="tab-image"
+                />
+              </div>
+              <div class="main-image" id="main-image-3">
+                <img
+                  src="./gif/first-3.gif"
+                  alt="위시리스트"
+                  class="tab-image"
+                />
+              </div>
+            </div>
+          </span>
+        </div>
+        <div class="cell"></div>
+      </div>
+
+      <!-- 4열 4칸 -->
+      <div class="grid row-4">
+        <div class="cell"></div>
+        <div class="cell tab-options-cell">
+          <span class="fade-box scroll-hidden">
+            <div class="tab-options-grid">
+              <div class="tab-option-row active" data-tab="1">
+                <span class="option-number">01</span>
+                <span class="option-text">축하금 보내기</span>
+              </div>
+              <div class="tab-option-row" data-tab="2">
+                <span class="option-number">02</span>
+                <span class="option-text">축하메세지</span>
+              </div>
+              <div class="tab-option-row" data-tab="3">
+                <span class="option-number">03</span>
+                <span class="option-text">위시리스트</span>
+              </div>
+            </div>
+          </span>
+        </div>
+        <div class="cell description-cell">
+          <span class="fade-box scroll-hidden">
+            <div class="tab-description">
+              <div class="description-content active" id="description-1">
+                <p>
+                    JO;IN의 돌잔치 축하금 보내기 서비스는 첫돌을 맞이한 아이에게 마음을 전할 수 있도록 돕습니다. 카드 결제는 물론, 간편결제 등 여러 수단을 통해 빠르고 편리하게 축하금을 보낼 수 있어, 누구나 부담 없이 이용할 수 있습니다.
+                </p>
+              </div>
+              <div class="description-content" id="description-2">
+                <p>
+                    하객들은 QR 코드를 스캔해 첫돌을 맞이한 아이에게 축하 메시지를 디지털로 남길 수 있습니다. 사진과 글을 함께 첨부할 수 있으며, 이렇게 남겨진 모든 메시지는 키오스크는 물론 부모님의 전용 앱에서도 모아 볼 수 있어, 소중한 축하의 순간들을 언제든지 다시 확인할 수 있습니다.
+                </p>
+              </div>
+              <div class="description-content" id="description-3">
+                <p>
+                    이 기능은 돌잔치 키오스크에서만 제공되는 특별한 서비스로, 축하객이 아이 부모가 미리 설정한 위시리스트를 확인하고, 원하는 선물을 펀딩 형식으로 결제할 수 있도록 지원합니다. 선물 선택의 고민을 줄이고, 실용적인 축하를 가능하게 합니다.
+                </p>
+              </div>
+            </div>
+          </span>
+        </div>
+        <div class="cell"></div>
+      </div>
+
+      <!-- 5열 2칸 (큰 높이) -->
+      <div class="grid row-5">
+        <div class="cell large-content-cell">
+          <span class="fade-box scroll-hidden">
+            <div class="visual-stack">
+              <img
+                src="./img/funeral/kiosk.png"
+                alt="키오스크 이미지"
+                class="kiosk-img"
+              />
+              <div class="visual-desc">
+                <h2>감동은 더하고<br />실수는 줄입니다</h2>
+                <p>
+                    따뜻한 그래픽과 직관적인 화면 구성으로<br> 누구나 쉽게 사용할 수 있으며,<br>
+                    아이의 소중한 첫 생일을 더욱 의미 있고<br> 품격 있게 만들어줍니다.
+                </p>
+              </div>
+            </div>
+          </span>
+        </div>
+        <div class="cell"></div>
+      </div>
+
+      <!-- 6열 4칸 -->
+      <div class="grid row-6">
+        <div class="cell"></div>
+        <div class="cell service-title-cell">
+          <span class="fade-box scroll-hidden service-title-text">
+            흐름을<br />만듭니다
+          </span>
+        </div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+      </div>
+
+      <!-- 7열 4칸 -->
+      <div class="grid row-7">
+        <div class="cell"></div>
+        <div class="cell memorial-image-cell fade-box scroll-hidden">
+          <div class="memorial-image-wrapper">
+            <img
+              src="./img/firstbirthday/firstbirth01.png"
+              alt="돌잔치 이미지 1"
+              class="memorial-image active"
+              id="memorial-image-1"
+            />
+            <img
+              src="./img/firstbirthday/firstbirth02.png"
+              alt="돌잔치 이미지 2"
+              class="memorial-image"
+              id="memorial-image-2"
+            />
+            <img
+              src="./img/firstbirthday/firstbirth03.png"
+              alt="돌잔치 이미지 3"
+              class="memorial-image"
+              id="memorial-image-3"
+            />
+            <img
+              src="./img/firstbirthday/firstbirth04.png"
+              alt="돌잔치 이미지 4"
+              class="memorial-image"
+              id="memorial-image-4"
+            />
+          </div>
+        </div>
+        <div class="cell memorial-steps-cell">
+          <span class="fade-box scroll-hidden">
+            <div class="memorial-steps">
+              <div class="step-indicators">
+                <div class="step-indicator active" data-step="1">1</div>
+                <div class="step-indicator" data-step="2">2</div>
+                <div class="step-indicator" data-step="3">3</div>
+                <div class="step-indicator" data-step="4">4</div>
+              </div>
+              <div class="step-content">
+                <div class="step-panel active" id="step-panel-1">
+                  <h3>사용자의 필요와 편의에 맞춘<br><br> 첫 화면</h3>
+                  <p>
+                    가독성 높은 폰트 사이즈와 무게, 그리고 직관적인 버튼을 보여줍니다. 사용자는 니즈에 따라 일반 모드와 큰글씨 모드를 선택할 수 있습니다.
+                  </p>
+                </div>
+                <div class="step-panel" id="step-panel-2">
+                  <h3>쉽고 빠른 축하금 보내기</h3>
+                  <p>친절한 화면 안내에 따라 단계별로 진행하면 누구나 쉽게 축하금을 보낼 수 있어, 아이의 첫 생일 축하하는 마음을 전달할 수 있습니다.</p>
+                </div>
+                <div class="step-panel" id="step-panel-3">
+                  <h3>센스 있는 축하, 위시리스트</h3>
+                  <p>아이의 부모가 돌잔치 전에 미리 설정한 선물 위시리스트를, 축하객들이 펀딩 방식으로 함께 준비할 수 있습니다.</p>
+                </div>
+                <div class="step-panel" id="step-panel-4">
+                  <h3>아이의 첫 생일을 축복하는<br><br> 축하메세지</h3>
+                  <p>현장에서 축하객들이 직접 남기는 따뜻한 축하메세지로 아이의 특별한 날을 추억으로 간직할 수 있습니다.</p>
+                </div>
+              </div>
+            </div>
+          </span>
+        </div>
+        <div class="cell"></div>
+      </div>
+
+      <!-- 8열 4칸 -->
+      <div class="grid row-8">
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+      </div>
+    </section>
+    <button id="scrollTopBtn" style="position:fixed; right:2vw; bottom:2vw; z-index:9999; width:48px; height:48px; border-radius:50%; background:#fff; color:#000; border:none; display:flex; align-items:center; justify-content:center; box-shadow:0 2px 8px rgba(0,0,0,0.08);">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <polygon points="10,4 16,14 4,14" fill="#000"/>
+      </svg>
+    </button>
+    <script>
+    document.getElementById('scrollTopBtn').onclick = function() {
+      window.scrollTo({top:0, behavior:'smooth'});
+    };
+    </script>
+    <script src="./js/funeral.js"></script>
+  </body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>장례식</title>
+    <link rel="icon" href="./img/join_favicon.png" type="image/x-icon" sizes="32x32">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fonts-archive/AppleSDGothicNeo/AppleSDGothicNeo.css" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="./css/reset.css" rel="stylesheet">
+    <link href="./css/funeral.css" rel="stylesheet">
+</head>
+<body>
+    <!-- 메인 섹션 -->
+    <section class="main-section" id="main">
+        <!-- 1열 3칸 -->
+        <div class="grid row-1">
+            <div class="cell menu-cell">
+                <span class="fade-box instant-fade">
+                    <img src="./img/menu.png" alt="메뉴" class="menu-icon" style="cursor: pointer" onclick="smoothNav('nav.html')" />
+                </span>
+            </div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
+
+        <!-- 2열 4칸 -->
+        <div class="grid row-2">
+            <div class="cell service-label-cell">
+                <span class="fade-box instant-fade service-label-text">
+                    장례식<br><span>FUNERAL</span>
+                </span>
+            </div>
+            <div class="cell"></div>
+            <div class="cell service-title-cell">
+                <span class="fade-box instant-fade service-title-text">
+                    마지막 배웅을<br>돕습니다
+                </span>
+            </div>
+            <div class="cell"></div>
+        </div>
+
+        <!-- 3열 3칸 -->
+        <div class="grid row-3">
+            <div class="cell"></div>
+            <div class="cell image-cell">
+                <span class="fade-box scroll-hidden">
+                    <div class="main-image-section">
+                        <div class="main-image active" id="main-image-1">
+                            <img src="./gif/funeral-1.gif" alt="부조금 보내기" class="tab-image">
+                        </div>
+                        <div class="main-image" id="main-image-2">
+                            <img src="./gif/funeral-2.gif" alt="축하메세지" class="tab-image">
+                        </div>
+                        <div class="main-image" id="main-image-3">
+                            <img src="./gif/funeral-3.gif" alt="고인 정보 열람" class="tab-image">
+                        </div>
+                    </div>
+                </span>
+            </div>
+            <div class="cell"></div>
+        </div>
+
+        <!-- 4열 4칸 -->
+        <div class="grid row-4">
+            <div class="cell"></div>
+            <div class="cell tab-options-cell">
+                <span class="fade-box scroll-hidden">
+                    <div class="tab-options-grid">
+                        <div class="tab-option-row active" data-tab="1">
+                            <span class="option-number">01</span>
+                            <span class="option-text">부조금 보내기</span>
+                        </div>
+                        <div class="tab-option-row" data-tab="2">
+                            <span class="option-number">02</span>
+                            <span class="option-text">디지털추모관</span>
+                        </div>
+                        <div class="tab-option-row" data-tab="3">
+                            <span class="option-number">03</span>
+                            <span class="option-text">고인 정보 열람</span>
+                        </div>
+                    </div>
+                </span>
+            </div>
+            <div class="cell description-cell">
+                <span class="fade-box scroll-hidden">
+                    <div class="tab-description">
+                        <div class="description-content active" id="description-1">
+                            <p>JO;IN의 장례식 부조금 보내기 서비스는 상주를 선택하여 고인을 추모하는 마음을 전할 수 있도록 돕습니다. 카드 결제는 물론, 간편결제 등 여러 수단을 통해 빠르고 편리하게 부조금을 보낼 수 있어, 누구나 부담 없이 이용할 수 있습니다.</p>
+                        </div>
+                        <div class="description-content" id="description-2">
+                            <p>하객들은 QR 코드를 스캔해 고인을 추모하는 마음을 담은 메시지를 디지털로 남길 수 있습니다. 사진과 글을 함께 첨부할 수 있으며, 이렇게 남겨진 모든 메시지는 키오스크는 물론 상주의 전용 앱에서도 모아 볼 수 있어, 조문객들의 마음을을 언제든지 다시 확인할 수 있습니다.</p>
+                        </div>
+                        <div class="description-content" id="description-3">
+                            <p>이 기능은 장례식 키오스크에서만 제공되는 특별한 서비스로, 상주가 미리 등록한 고인의 나이, 생일, 생전 정보 등을 조문객이 키오스크를 통해 쉽게 열람할 수 있도록 구성되어 있습니다. 조문객들이 고인을 더 깊이 기억하고, 개인적인 추억을 떠올릴 수 있는 경험을 제공합니다.</p>
+                        </div>
+                    </div>
+                </span>
+            </div>
+            <div class="cell"></div>
+        </div>
+
+        <!-- 5열 2칸 (큰 높이) -->
+        <div class="grid row-5">
+            <div class="cell large-content-cell">
+                <span class="fade-box scroll-hidden">
+                    <div class="visual-stack">
+                        <img src="./img/funeral/kiosk.png" alt="키오스크 이미지" class="kiosk-img">
+                        <div class="visual-desc">
+                            <h2>감동은 더하고<br>실수는 줄입니다</h2>
+                            <p>
+                                직관적인 화면 구성과 따듯한 그래픽으로<br>
+                                누구나 쉽게 사용할 수 있으며, 품격있는<br>
+                                예식 분위기를 완성합니다
+                            </p>
+                        </div>
+                    </div>
+                </span>
+            </div>
+            <div class="cell"></div>
+        </div>
+
+        <!-- 6열 4칸 -->
+        <div class="grid row-6">
+            <div class="cell"></div>
+            <div class="cell service-title-cell">
+                <span class="fade-box scroll-hidden service-title-text">
+                    흐름을<br>만듭니다
+                </span>
+            </div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
+
+        <!-- 7열 4칸 -->
+        <div class="grid row-7">
+            <div class="cell"></div>
+            <div class="cell memorial-image-cell fade-box scroll-hidden">
+                <div class="memorial-image-wrapper">
+                    <img src="./img/funeral/funeral1.png" alt="장례식 이미지 1" class="memorial-image active" id="memorial-image-1">
+                    <img src="./img/funeral/funeral2.png" alt="장례식 이미지 2" class="memorial-image" id="memorial-image-2">
+                    <img src="./img/funeral/funeral3.png" alt="장례식 이미지 3" class="memorial-image" id="memorial-image-3">
+                    <img src="./img/funeral/funeral4.png" alt="장례식 이미지 4" class="memorial-image" id="memorial-image-4">
+                </div>
+            </div>
+            <div class="cell memorial-steps-cell">
+                <span class="fade-box scroll-hidden">
+                    <div class="memorial-steps">
+                        <div class="step-indicators">
+                            <div class="step-indicator active" data-step="1">1</div>
+                            <div class="step-indicator" data-step="2">2</div>
+                            <div class="step-indicator" data-step="3">3</div>
+                            <div class="step-indicator" data-step="4">4</div>
+                        </div>
+                        <div class="step-content">
+                            <div class="step-panel active" id="step-panel-1">
+                                <h3>사용자의 필요와 편의에 맞춘<br><br> 첫 화면</h3>
+                                <p>가독성 높은 폰트 사이즈와 무게, 그리고 직관적인 버튼을 보여줍니다. 사용자는 니즈에 따라 일반 모드와 큰글씨 모드를 선택할 수 있습니다.</p>
+                            </div>
+                            <div class="step-panel" id="step-panel-2">
+                                <h3>쉽고 빠른 부의금 보내기</h3>
+                                <p>친절한 화면 안내에 따라 단계별로 진행하면 누구나 쉽게 부의금을 보낼 수 있어, 고인을 추모하는 마음을 전달할 수 있습니다.</p>
+                            </div>
+                            <div class="step-panel" id="step-panel-3">
+                                <h3>추억과 함께 머무는 고인 정보 열람</h3>
+                                <p>고인의 생애와 기억을 조용히 되새길 수 있는 공간으로 소중했던 순간들과 발자취를 통해 고인을 기리는 마음을 함께 나눌 수 있습니다.</p>
+                            </div>
+                            <div class="step-panel" id="step-panel-4">
+                                <h3>고인을 함께 기리는 디지털 추모관</h3>
+                                <p>현장에서 조문객들이 직접 고인과 유가족들에게 추모 메세지를 남겨, 모두 함께 떠난 이를 기릴 수 있습니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                </span>
+            </div>
+            <div class="cell"></div>
+        </div>
+
+        <!-- 8열 4칸 -->
+        <div class="grid row-8">
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
+    </section>
+
+   
+    <button id="scrollTopBtn" style="position:fixed; right:2vw; bottom:2vw; z-index:9999; width:48px; height:48px; border-radius:50%; background:#fff; color:#000; border:none; display:flex; align-items:center; justify-content:center; box-shadow:0 2px 8px rgba(0,0,0,0.08);">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+          <polygon points="10,4 16,14 4,14" fill="#000"/>
+        </svg>
+      </button>
+      <script>
+      document.getElementById('scrollTopBtn').onclick = function() {
+        window.scrollTo({top:0, behavior:'smooth'});
+      };
+      </script>
+    <script src="./js/funeral.js"></script>
+</body>
+</html>

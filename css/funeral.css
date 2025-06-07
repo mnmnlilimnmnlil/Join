@@ -1,0 +1,910 @@
+@charset "UTF-8";
+/* ───── Grid System ───── */
+.grid {
+  display: grid;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.row-1 {
+  grid-template-columns: 0.85fr 1.7fr 0.45fr;
+  min-height: 11vh;
+}
+.row-2 {
+  grid-template-columns: 0.85fr 0.425fr 1.275fr 0.45fr;
+  min-height: 50vh;
+}
+.row-3 {
+  grid-template-columns: 0.85fr 1.7fr 0.45fr;
+  min-height: 45vh;
+  height: 45vh;
+}
+.row-4 {
+  grid-template-columns: 0.85fr 0.425fr 1.275fr 0.45fr;
+  min-height: 25vh;
+}
+.row-5 {
+  grid-template-columns: 2.55fr 0.45fr;
+  min-height: 220vh;
+}
+.row-6 {
+  grid-template-columns: 0.85fr 0.85fr 0.85fr 0.45fr;
+  min-height: 60vh;
+}
+.row-7 {
+  grid-template-columns: 0.85fr 0.85fr 0.85fr 0.45fr;
+  min-height: 920px;
+}
+.row-8 {
+  grid-template-columns: 0.85fr 0.85fr 0.85fr 0.45fr;
+  min-height: 40vh;
+}
+
+/* ───── Main Section Layout ───── */
+.main-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  background-color: #000;
+  color: #fff;
+  min-height: 100vh;
+}
+
+.main-section > div > div {
+  border-right: 1px solid var(--grid-line);
+  border-bottom: 1px solid var(--grid-line);
+}
+
+.main-section > div > div:last-child {
+  border-right: none;
+}
+
+.main-section > div:last-child > div {
+  border-bottom: none;
+}
+
+/* ───── Cell Styles ───── */
+.cell {
+  border-right: 1px solid var(--grid-line);
+  border-bottom: 1px solid var(--grid-line);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  min-width: 0;
+  overflow-wrap: break-word;
+  position: relative;
+}
+
+.grid > div:last-child .cell {
+  border-bottom: none;
+}
+
+.grid .cell:last-child {
+  border-right: none;
+}
+
+/* ───── Menu & Logo Styles ───── */
+.menu-cell {
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  width: 100%;
+  transition: background 0.2s;
+  padding-left: clamp(2vw, 4vw, 5vw);
+}
+
+.menu-icon {
+  width: clamp(28px, 4.5vw, 68px);
+  height: auto;
+  max-height: clamp(28px, 4.5vw, 68px);
+  max-width: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.menu-icon:hover {
+  transform: scale(1.05);
+}
+
+/* ───── Typography ───── */
+.service-label-cell {
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-left: clamp(2vw, 4vw, 5vw);
+  padding-top: clamp(1vw, 2vw, 3vw);
+  font-family: var(--font-apple);
+  font-size: clamp(1rem, 1.8vw, 2rem);
+  line-height: 1.6;
+  font-weight: 600;
+}
+
+.service-label-text {
+  font-family: var(--font-apple);
+  font-size: clamp(1rem, 1.8vw, 2rem);
+  line-height: clamp(2rem, 3vw, 3.25rem);
+  font-weight: 500;
+}
+
+.service-label-text span {
+  font-family: var(--font-Montserrat);
+  font-weight: 400;
+}
+
+.service-title-cell {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: clamp(2vw, 3vw, 4vw);
+  position: relative;
+  height: 100%;
+}
+
+.service-title-text {
+  font-family: var(--font-apple);
+  font-size: clamp(2.5rem, 4.8vw, 5.625rem);
+  font-weight: 600;
+  text-align: right;
+  line-height: 1.2;
+  word-break: keep-all;
+  position: relative;
+  bottom: 0;
+}
+
+/* ───── Image Section ───── */
+.image-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.main-image-section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: static;
+}
+
+.main-image {
+  width: 100%;
+  height: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-image.active {
+  display: flex;
+}
+
+.main-image.fade-out {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.main-image.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.3s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.tab-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 0;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* ───── Tab Options ───── */
+.tab-options-cell {
+  padding: 0;
+  background: none;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  pointer-events: auto !important;
+  position: relative;
+  z-index: 10;
+}
+
+.tab-options-cell .fade-box,
+.tab-options-cell .scroll-hidden {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.tab-options-grid {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 100%;
+  width: 100%;
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+  pointer-events: auto !important;
+  background: transparent;
+  flex: 1;
+}
+
+.tab-option-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 clamp(1rem, 2vw, 2rem);
+  font-size: clamp(0.9rem, 1.1vw, 1.25rem);
+  border-bottom: 1px solid #fff;
+  font-family: var(--font-apple);
+  font-weight: 400;
+  cursor: pointer !important;
+  transition: background 0.3s ease, color 0.3s ease, font-weight 0.3s ease;
+  min-height: 0;
+  height: 100%;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  pointer-events: auto !important;
+  z-index: 10;
+  position: relative;
+}
+
+.tab-option-row:last-child {
+  border-bottom: none;
+}
+
+.tab-option-row .option-number {
+  font-family: var(--font-Montserrat);
+  font-size: clamp(0.9rem, 1.3vw, 1.8rem);
+  font-weight: 600;
+  color: #fff;
+  min-width: clamp(2rem, 2.5vw, 3rem);
+  text-align: left;
+  transition: color 0.3s ease;
+  pointer-events: none;
+}
+
+.tab-option-row .option-text {
+  font-family: var(--font-apple);
+  font-size: clamp(0.8rem, 1.45vw, 1.7rem);
+  font-weight: 500;
+  color: #fff;
+  text-align: right;
+  transition: color 0.3s ease, font-weight 0.3s ease;
+  pointer-events: none;
+}
+
+.tab-options-grid .tab-option-row.active {
+  background: rgba(51, 51, 51, 1);
+  font-weight: 700;
+}
+
+.tab-options-grid .tab-option-row:hover:not(.active) {
+  background: #333;
+}
+
+/* ───── Description Section ───── */
+.description-cell {
+  overflow: hidden;
+  word-break: keep-all;
+  white-space: normal;
+  padding: clamp(1rem, 2.4vw, 2.4rem);
+  display: flex;
+  align-items: center;
+}
+
+.tab-description {
+  width: 100%;
+  max-width: 100%;
+}
+
+.description-content {
+  width: 100%;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  word-break: keep-all;
+  white-space: normal;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: none;
+}
+
+.description-content.active {
+  display: block;
+}
+
+.description-content.fade-out {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.description-content.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.3s ease forwards;
+}
+
+.description-content p {
+  font-family: var(--font-apple);
+  font-size: clamp(0.9rem, 1.3vw, 1.5rem);
+  color: #ccc;
+  line-height: 1.6;
+}
+
+/* ───── Large Content Section ───── */
+.large-content-cell {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 60vh;
+  display: block;
+  background: transparent;
+  padding: clamp(2vw, 4vw, 6vw);
+}
+
+.large-content {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  min-height: 70vh;
+  align-items: center;
+  gap: clamp(2vw, 4vw, 6vw);
+}
+
+.content-left {
+  flex: 0.7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  border-radius: 10px;
+  padding: 0;
+}
+
+.content-right {
+  flex: 0.4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: clamp(1.5rem, 2vw, 3rem);
+  padding-left: clamp(1vw, 2vw, 3vw);
+}
+
+.content-right h2 {
+  font-family: var(--font-Montserrat);
+  font-size: clamp(2.5rem, 4.2vw, 6rem);
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.content-right p {
+  font-family: var(--font-apple);
+  font-size: clamp(1rem, 1.6vw, 2rem);
+  color: #ccc;
+  line-height: 1.6;
+}
+
+/* ───── Flow Controls ───── */
+.flow-image-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+.flow-image-section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flow-image {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.flow-image.active {
+  display: flex;
+}
+
+.flow-image.fade-out {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.flow-image.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.3s ease forwards;
+}
+
+.flow-controls-cell {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: clamp(1.5vw, 3vw, 4vw);
+}
+
+.flow-indicators {
+  display: flex;
+  gap: clamp(8px, 1.2vw, 15px);
+  margin-bottom: clamp(15px, 2.5vw, 30px);
+  justify-content: center;
+}
+
+.indicator {
+  width: clamp(8px, 1vw, 12px);
+  height: clamp(8px, 1vw, 12px);
+  border-radius: 50%;
+  background-color: #666;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.indicator.active {
+  background-color: #fff;
+}
+
+.flow-descriptions {
+  position: relative;
+  height: clamp(100px, 12vw, 200px);
+  width: 100%;
+  text-align: center;
+}
+
+.flow-description {
+  position: absolute;
+  width: 100%;
+  display: none;
+  text-align: center;
+}
+
+.flow-description.active {
+  display: block;
+}
+
+.flow-description.fade-out {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.flow-description.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.3s ease forwards;
+}
+
+.flow-description h4 {
+  font-family: var(--font-apple);
+  font-size: clamp(1rem, 1.5vw, 1.8rem);
+  margin-bottom: clamp(8px, 1.2vw, 15px);
+  font-weight: 600;
+  color: #fff;
+}
+
+.flow-description p {
+  font-family: var(--font-apple);
+  font-size: clamp(0.8rem, 1vw, 1.2rem);
+  color: #ccc;
+  line-height: 1.6;
+}
+
+/* ───── Memorial Image Section ───── */
+.memorial-image-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background-color: #000;
+  overflow: hidden;
+  
+}
+
+.memorial-image-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.memorial-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:  100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.5s;
+  z-index: 1;
+  display: block;
+}
+
+.memorial-image.active {
+  opacity: 1;
+  z-index: 2;
+}
+
+.memorial-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ───── Memorial Steps Section ───── */
+.memorial-steps-cell {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: clamp(2vw, 2vw, 3vw);
+  position: relative;
+  background-color: #000;
+  
+}
+
+.memorial-steps {
+  width: 180%;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1.5rem, 2vw, 2.5rem);
+  margin-top: 80px;
+   
+}
+
+.step-indicators {
+  display: flex;
+  flex-direction: row;
+  gap: clamp(0.5rem, 1vw, 1.5rem);
+  margin-bottom: clamp(1rem, 1.5vw, 2rem);
+  justify-content: flex-start;
+  
+}
+
+.step-indicator {
+  width: clamp(2rem, 2.5vw, 3rem);
+  height: clamp(2rem, 2.5vw, 3rem);
+  border-radius: 50%;
+  background-color: rgba(110,110,110,1);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-Montserrat);
+  font-size: clamp(0.9rem, 1.2vw, 1.4rem);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.step-indicator:hover {
+  transform: scale(1.05);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.step-indicator.active {
+  background-color: #fff;
+  color: #000;
+}
+
+.step-content {
+  position: relative;
+  min-height: 400px;
+  width: 100%;
+  
+}
+
+.step-panel {
+  display: none;
+  opacity: 0;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.4s;
+}
+
+.step-panel.active {
+  display: block;
+  opacity: 1;
+}
+
+.step-panel h3 {
+  font-family: var(--font-apple);
+  font-size: clamp(1.2rem, 1.8vw, 2rem);
+  font-weight: 600;
+  margin-bottom: clamp(1rem, 1.5vw, 2rem);
+  color: #fff;
+}
+
+.step-panel p {
+  font-family: var(--font-apple);
+  font-size: clamp(0.9rem, 1.3vw, 1.5rem);
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+  margin-top: 50px;
+}
+
+/* ───── Animation Classes ───── */
+.fade-box {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1.2s cubic-bezier(0.4, 0, 0.2, 1), transform 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.fade-box.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.instant-fade {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s, transform 0.8s;
+}
+
+.instant-fade.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.scroll-hidden {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1.2s, transform 1.2s;
+}
+
+.scroll-hidden.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ───── Page Transition ───── */
+body {
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+body.fade-out {
+  opacity: 0;
+}
+
+.visual-stack {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  gap: clamp(2vw, 3vw, 4vw);
+  position: relative;
+  padding: clamp(2vw, 4vw, 6vw);
+}
+
+.kiosk-img {
+  width: clamp(50vw, 60vw, 67vw);
+  max-width: 67%;
+  height: auto;
+  display: block;
+  position: absolute;
+  left: 0;
+}
+
+.visual-desc {
+  position: static;
+  color: #fff;
+  text-align: left;
+  max-width: 100%;
+  width: clamp(35vw, 40vw, 45vw);
+  position: absolute;
+  right: -10vw;
+}
+
+.visual-desc h2 {
+  font-size: clamp(1.8rem, 6vw, 90px);
+  margin-bottom: clamp(0.5rem, 1vw, 1.5rem);
+  font-weight: 600;
+  font-family: var(--font-apple);
+  line-height: 1.2;
+}
+.visual-desc p {
+  font-size: clamp(0.9rem, 2.8vw, 32px);
+  font-weight: 400;
+  margin-top: clamp(2rem, 4vw, 5rem);
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.4;
+}
+
+@media screen and (min-height: 600px) and (max-height: 700px) {
+  .row-7 {
+      min-height: 690px;
+  }
+  
+}
+
+@media screen and (min-height: 700px) and (max-height: 800px) {
+  .row-7 {
+      min-height: 710px;
+  }
+  
+}
+
+@media screen and (min-height: 800px) and (max-height: 920px) {
+  .row-7 {
+      min-height: 850px;
+  }
+  
+}
+
+@media screen and (min-height: 910px) and (max-height: 1080px) {
+  .row-7 {
+      min-height: 910px;
+  }
+  
+}
+
+/* ───── Responsive Design ───── */
+@media screen and (min-width: 769px) and (max-width: 1750px) {
+
+  
+  .menu-icon {
+    width: clamp(28px, 3.5vw, 48px);
+    max-height: clamp(28px, 3.5vw, 48px);
+  }
+
+  .service-label-text {
+    font-size: clamp(1rem, 1.4vw, 1.6rem);
+    line-height: clamp(2rem, 2.8vw, 3rem);
+  }
+
+  .service-title-text {
+    font-size: clamp(2.2rem, 4.2vw, 4.8rem);
+  }
+
+  .tab-option-row {
+    font-size: clamp(0.85rem, 1vw, 1.1rem);
+    gap: clamp(0.8rem, 1.2vw, 1.5rem);
+    padding: 0 clamp(0.8rem, 1.5vw, 2rem);
+  }
+
+  .tab-option-row .option-number {
+    font-size: clamp(0.85rem, 1vw, 1.1rem);
+    min-width: clamp(1.8rem, 2.2vw, 2.5rem);
+  }
+
+  .tab-option-row .option-text {
+    font-size: clamp(0.75rem, 1.3vw, 1.4rem);
+  }
+
+  .description-content p {
+    font-size: clamp(0.85rem, 1.1vw, 1.3rem);
+  }
+
+  .content-right h2 {
+    font-size: clamp(2.2rem, 3.8vw, 4.5rem);
+  }
+
+  .content-right p {
+    font-size: clamp(0.9rem, 1.4vw, 1.6rem);
+  }
+
+  .flow-description h4 {
+    font-size: clamp(0.9rem, 1.3vw, 1.5rem);
+  }
+
+  .flow-description p {
+    font-size: clamp(0.75rem, 0.9vw, 1.1rem);
+  }
+
+  .visual-desc h2 {
+    font-size: clamp(1.5rem, 4.5vw, 60px);
+  }
+  .visual-desc p {
+    font-size: clamp(0.8rem, 2.2vw, 26px);
+  }
+
+  .step-indicator {
+    width: clamp(1.8rem, 2.2vw, 2.5rem);
+    height: clamp(1.8rem, 2.2vw, 2.5rem);
+    font-size: clamp(0.8rem, 1vw, 1.2rem);
+  }
+
+  .step-panel h3 {
+    font-size: clamp(1rem, 1.5vw, 1.8rem);
+  }
+
+  .step-panel p {
+    font-size: clamp(0.85rem, 1.1vw, 1.3rem);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .cell {
+    padding: 1rem;
+    min-height: 150px;
+  }
+
+  .large-content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .row-5 {
+    min-height: 120vh;
+  }
+
+  .flow-controls-cell {
+    align-items: center;
+  }
+
+  .flow-descriptions {
+    text-align: center;
+  }
+
+  .visual-stack {
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .kiosk-img {
+    position: static;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .visual-desc {
+    position: static;
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .memorial-steps-cell {
+    padding: 1.5rem;
+  }
+
+  .step-indicators {
+    justify-content: center;
+  }
+
+  .step-panel h3 {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  .step-panel p {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+}

@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>쉬운 언어 모형</title>
+    <link
+      rel="icon"
+      href="./img/join_favicon.png"
+      type="image/x-icon"
+      sizes="32x32"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/fonts-archive/AppleSDGothicNeo/AppleSDGothicNeo.css"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./css/reset.css" rel="stylesheet" />
+    <link href="./css/easy-language-model.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- 메인 섹션 -->
+    <section class="main-section" id="main">
+      <!-- 1열 3칸 -->
+      <div class="grid row-1">
+        <div class="cell menu-cell">
+          <span class="fade-box instant-fade">
+            <img
+              src="./img/menu.png"
+              alt="메뉴"
+              class="menu-icon"
+              style="cursor: pointer"
+              onclick="smoothNav('nav.html')"
+            />
+          </span>
+        </div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+      </div>
+
+      <!-- 2열 4칸 -->
+      <div class="grid row-2">
+        <div class="cell service-label-cell">
+          <span class="fade-box instant-fade service-label-text">
+            쉬운 언어 모형<br /><span>Language Model</span>
+          </span>
+        </div>
+        <div class="cell service-title-cell">
+          <span class="fade-box instant-fade service-title-text">
+            쉽게<br />전달합니다
+          </span>
+        </div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+      </div>
+
+      <!-- 3열 3칸 -->
+      <div class="grid row-3">
+        <div class="cell"></div>
+        <div class="cell description-cell">
+          <span class="fade-box instant-fade description-content">
+            <p class="description-text">
+              고령층 이용자 수가 많은 경조사 행사에서 보다 키오스크 서비스를
+              효과적으로 설계하고 운영하기 위해 고려할 점을 분석하고 살펴보아,
+              모두가 쉽게 이해할 수 있도록 JO;IN의 쉬운 언어 모형을
+              제작했습니다.
+            </p>
+            <p class="date-text">
+              [참조] 국립 국어원 - 무인 자동화 기기(키오스크) 쉬운 언어 사용
+              모형 개발 (2023. 12)
+            </p>
+          </span>
+        </div>
+        <div class="cell"></div>
+      </div>
+
+      <!-- 4열 4칸 -->
+      <div class="grid row-4">
+        <div class="cell"></div>
+        <div class="cell gif-cell">
+          <span class="fade-box scroll-hidden">
+            <div class="hand-pointer-container">
+              <div class="hand-pointer-bg">
+                <img
+                  src="./gif/easy-1.gif"
+                  alt="손가락 포인터"
+                  class="hand-pointer"
+                />
+              </div>
+            </div>
+          </span>
+        </div>
+        <div class="cell feature-cell">
+          <span class="fade-box scroll-hidden">
+            <h3 class="feature-title">01 고령층(70~80대) 이용 설계</h3>
+            <p class="feature-text">
+              기본적으로 아날로그 방식 (대면 서비스)에 익숙하지만, 쉬운 언어
+              표현들과 직관적인 기능으로 설계된 키오스크는 쉽고 부담 없이
+              이용합니다.
+            </p>
+          </span>
+        </div>
+        <div class="cell"></div>
+      </div>
+
+      <!-- 5열 4칸 -->
+      <div class="grid row-5">
+        <div class="cell"></div>
+        <div class="cell feature-cell">
+          <span class="fade-box scroll-hidden">
+            <h3 class="feature-title">02 효과적인 언어 표현</h3>
+            <p class="feature-text">
+              완결된 문장, 조사의 포함, 문법에 맞는 띄어쓰기, 그리고
+              ~습니다/~합니다' 형태의 종결어미가 사용자의 이해도를 더 높입니다.
+            </p>
+          </span>
+        </div>
+        <div class="cell feature-cell">
+          <span class="fade-box scroll-hidden">
+            <h3 class="feature-title">03 직관적인 조작 방식</h3>
+            <p class="feature-text">
+              사용자들은 직접 입력 (키보드) 보다는 터치 방식, 그리고 누르기 쉽고
+              즉시 이해가 가능한 구성의 인터페이스를 선호합니다.
+            </p>
+          </span>
+        </div>
+        <div class="cell"></div>
+      </div>
+
+      <!-- 6열 4칸 -->
+      <div class="grid row-6">
+        <div class="cell"></div>
+        <div class="cell service-title-cell">
+          <span class="fade-box scroll-hidden service-title-text">
+            모두를 위한<br />화면을 만듭니다
+          </span>
+        </div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+      </div>
+
+      <!-- 7열 4칸 - 탭 섹션 -->
+      <div class="grid row-7">
+        <div class="cell"></div>
+        <div class="cell tab-cell">
+          <span class="fade-box scroll-hidden">
+            <div class="tab-section">
+              <div class="tab-buttons">
+                <button class="tab-btn active" data-tab="1">1</button>
+                <button class="tab-btn" data-tab="2">2</button>
+              </div>
+
+              <div class="tab-content">
+                <div class="tab-panel active" id="tab-1">
+                  <h3>큰글씨 모드</h3>
+                  <p>
+                    초기 화면에서 큰글씨 모드를 선택할 수 있어, 모두가 편리하게
+                    서비스를 이용할 수 있습니다.
+                  </p>
+                </div>
+                <div class="tab-panel" id="tab-2">
+                  <h3>음성 서비스</h3>
+                  <p>
+                    키오스크의 단계별 음성 안내 기능을 통해 글자 안내와 함께
+                    보다 직관적인 사용 경험을 제공합니다.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </span>
+        </div>
+        <div class="cell image-cell">
+          <span class="fade-box scroll-hidden">
+            <div class="image-section">
+              <div class="tab-image active" id="image-1">
+                <img src="./img/languagemodel/1.png" alt="큰글씨 모드 이미지" />
+              </div>
+              <div class="tab-image" id="image-2">
+                <img src="./img/languagemodel/2.png" alt="음성 서비스 이미지" />
+              </div>
+
+              <div class="info-bubbles">
+                <!-- 말풍선 1 - 오른쪽 상단 -->
+                <div class="info-bubble info-bubble-right active" data-tab="1">
+                  <p>기본 키오스크의 글씨에 비해<br />1.5배 큰 글씨를 제공</p>
+                </div>
+                <div class="info-bubble info-bubble-right" data-tab="2">
+                  <p class="voice-text" style="cursor: pointer">
+                    <span class="play-icon">
+                      <svg
+                        viewBox="0 0 24 24"
+                        width="14"
+                        height="14"
+                        fill="currentColor"
+                      >
+                        <path d="M8 5v14l11-7z" />
+                      </svg>
+                    </span>
+                    또박또박 들려주는 음성안내
+                  </p>
+                  <audio id="voiceGuide" style="display: none">
+                    <source src="./audio/scan.wav" type="audio/wav" />
+                  </audio>
+                </div>
+
+                <!-- 말풍선 2 - 왼쪽 하단 -->
+                <div class="info-bubble info-bubble-left active" data-tab="1">
+                  <p>스크롤형 화면으로<br />큰 글씨에도 여유 있는 구성</p>
+                </div>
+                <div class="info-bubble info-bubble-left" data-tab="2">
+                  <p>
+                    화면 조작 없이 들을 수 있는<br />
+                    키오스크 사용법 설명
+                  </p>
+                </div>
+              </div>
+            </div>
+          </span>
+        </div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+      </div>
+
+      <!-- 8열 4칸 -->
+      <div class="grid row-8">
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell service-title-cell" style="justify-content: flex-end">
+          <span
+            class="fade-box scroll-hidden service-title-text"
+            style="text-align: right"
+          >
+            JO;IN<br />쉬운 언어 모형 보기
+          </span>
+        </div>
+        <div class="cell"></div>
+      </div>
+
+      <!-- 9열 4칸 -->
+      <div class="grid row-9">
+        <div class="cell"></div>
+        <div class="cell download-info-cell">
+          <span class="fade-box scroll-hidden">
+            <h4>장례식 키오스크 쉬운 언어 모형</h4>
+            <p>PDF로 장례식 키오스크 쉬운 언어 모형을 만나보세요 !</p>
+          </span>
+        </div>
+        <div class="cell download-btn-cell">
+          <span class="fade-box scroll-hidden">
+            <a class="download-btn funeral" href="./pdf/쉬운언어모형(장례식).pdf" download>
+              <span class="download-text">PDF 다운받기</span>
+              <span class="download-icon">
+                <svg
+                  class="arrow-icon"
+                  width="56"
+                  height="56"
+                  viewBox="0 0 56 56"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M28 14V38"
+                    stroke="#ffffff"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M20 30L28 40L36 30"
+                    stroke="#ffffff"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <svg
+                  class="check-icon"
+                  width="56"
+                  height="56"
+                  viewBox="0 0 56 56"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style="display: none"
+                >
+                  <path
+                    d="M16 30L26 40L40 20"
+                    stroke="#ffffff"
+                    stroke-width="4"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <span class="downloading-spinner" style="display: none"></span>
+              </span>
+            </a>
+          </span>
+        </div>
+        <div class="cell"></div>
+      </div>
+
+      <!-- 10열 4칸 -->
+      <div class="grid row-10">
+        <div class="cell"></div>
+        <div class="cell download-info-cell">
+          <span class="fade-box scroll-hidden">
+            <h4>결혼식 키오스크 쉬운 언어 모형</h4>
+            <p>PDF로 결혼식 키오스크 쉬운 언어 모형을 만나보세요 !</p>
+          </span>
+        </div>
+        <div class="cell download-btn-cell">
+          <span class="fade-box scroll-hidden">
+            <a
+              class="download-btn birthday"
+              href="./pdf/쉬운언어모형(결혼식).pdf"
+              download
+            >
+              <span class="download-text">PDF 다운받기</span>
+              <span class="download-icon">
+                <svg
+                  class="arrow-icon"
+                  width="56"
+                  height="56"
+                  viewBox="0 0 56 56"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M28 14V38"
+                    stroke="#D2F84D"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M20 30L28 40L36 30"
+                    stroke="#D2F84D"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <svg
+                  class="check-icon"
+                  width="56"
+                  height="56"
+                  viewBox="0 0 56 56"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style="display: none"
+                >
+                  <path
+                    d="M16 30L26 40L40 20"
+                    stroke="#D2F84D"
+                    stroke-width="4"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <span class="downloading-spinner" style="display: none"></span>
+              </span>
+            </a>
+          </span>
+        </div>
+        <div class="cell"></div>
+      </div>
+
+      <!-- 11열 4칸 -->
+      <div class="grid row-11">
+        <div class="cell"></div>
+        <div class="cell download-info-cell">
+          <span class="fade-box scroll-hidden">
+            <h4>돌잔치 키오스크 쉬운 언어 모형</h4>
+            <p>PDF로 돌잔치 키오스크 쉬운 언어 모형을 만나보세요 !</p>
+          </span>
+        </div>
+        <div class="cell download-btn-cell">
+          <span class="fade-box scroll-hidden">
+            <a
+              class="download-btn wedding"
+              href="./pdf/쉬운언어모형(돌잔치).pdf"
+              download
+            >
+              <span class="download-text">PDF 다운받기</span>
+              <span class="download-icon">
+                <svg
+                  class="arrow-icon"
+                  width="56"
+                  height="56"
+                  viewBox="0 0 56 56"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M28 14V38"
+                    stroke="#7588FF"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M20 30L28 40L36 30"
+                    stroke="#7588FF"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <svg
+                  class="check-icon"
+                  width="56"
+                  height="56"
+                  viewBox="0 0 56 56"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style="display: none"
+                >
+                  <path
+                    d="M16 30L26 40L40 20"
+                    stroke="#7588FF"
+                    stroke-width="4"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <span class="downloading-spinner" style="display: none"></span>
+              </span>
+            </a>
+          </span>
+        </div>
+        <div class="cell"></div>
+      </div>
+
+      <!-- 12열 3칸 -->
+      <div class="grid row-12">
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+      </div>
+    </section>
+
+    <button id="scrollTopBtn" style="position:fixed; right:2vw; bottom:2vw; z-index:9999; width:48px; height:48px; border-radius:50%; background:#fff; color:#000; border:none; display:flex; align-items:center; justify-content:center; box-shadow:0 2px 8px rgba(0,0,0,0.08);">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <polygon points="10,4 16,14 4,14" fill="#000"/>
+      </svg>
+    </button>
+    <script>
+    document.getElementById('scrollTopBtn').onclick = function() {
+      window.scrollTo({top:0, behavior:'smooth'});
+    };
+    </script>
+
+    <script src="./js/easy-language-model.js"></script>
+  </body>
+</html>
