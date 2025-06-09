@@ -498,6 +498,14 @@
   display: block;
 }
 
+/* 7열 이미지 셀 스타일 수정 */
+.row-7 .tab-image img {
+  object-fit: fill;
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+}
+
 /* ───── Info Bubbles (둥근 사각형) ───── */
 .info-bubbles {
   position: absolute;
