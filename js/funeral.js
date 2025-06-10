@@ -1,3 +1,21 @@
+// 이미지 지연 로딩 설정
+function initLazyLoading() {
+  const lazyImages = document.querySelectorAll('img[data-src]');
+  
+  const imageObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const img = entry.target;
+        img.src = img.dataset.src;
+        img.removeAttribute('data-src');
+        observer.unobserve(img);
+      }
+    });
+  });
+
+  lazyImages.forEach(img => imageObserver.observe(img));
+}
+
 // 페이지 전환 효과
 function smoothNav(url) {
   document.body.classList.add("fade-out")
@@ -188,6 +206,7 @@ window.addEventListener("load", () => {
   })
 
   // 각 기능 초기화
+  initLazyLoading()
   initScrollAnimations()
   initMainTabFunctionality()
   initFlowTabFunctionality()
